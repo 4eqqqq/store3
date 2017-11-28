@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Site-11-28_1412",
+    "name": "Site-11-28_1545",
     "currentPage": "index.html",
     "theme": {
       "name": "BlackAMP",
@@ -26,9 +26,9 @@
         "isRoundedButtons": false
       }
     },
-    "versionFirst": "4.4.1",
+    "versionFirst": "4.5.0",
     "uniqCompNum": 4,
-    "versionPublish": "4.4.1"
+    "versionPublish": "4.5.0"
   },
   "pages": {
     "index.html": {
@@ -60,7 +60,7 @@
               "align-items": "center",
               ".brand-logo": {
                 "img": {
-                  "max-width": "4rem"
+                  "max-width": "5rem"
                 },
                 "padding-right": "1rem"
               }
@@ -68,7 +68,38 @@
             ".hamburger": {
               "margin-left": "auto",
               "font-size": "32px",
-              "color": "@hamburgerColor"
+              "color": "@hamburgerColor",
+              "width": "30px",
+              "height": "20px",
+              "position": "relative",
+              "cursor": "pointer",
+              "&:focus": {
+                "outline": "none"
+              },
+              "span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all .2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all .2s"
+                }
+              }
             },
             ".brand-name": {
               "color": "#fff"
@@ -85,40 +116,39 @@
               "text-decoration": "none"
             },
             ".close-sidebar": {
-              "font-size": "1.5em",
-              "padding-left": "5px"
+              "width": "30px",
+              "height": "20px",
+              "span": {
+                "position": "absolute",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px"
+              }
             }
           },
           "_name": "menu1",
-          "_customHTML": "<amp-sidebar id=\"sidebar1\" layout=\"nodisplay\" side=\"right\" class=\"mbr-white\">\n  <div role=\"button\" aria-label=\"close sidebar\" on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"close-sidebar\">✕</div>\n  <ul class=\"sidebar\">\n    <li><a href=\"#\">Example 1</a></li>\n    <li><a href=\"#\">Example 2</a></li>\n    <li><a href=\"#\">Example 3</a></li>\n  </ul>\n</amp-sidebar>\n\n<header class=\"menu\" group=\"Menu\" plugins=\"amp-sidebar\" global=\"\" once=\"menu\" always-top=\"\" position-absolute=\"\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked=\"\">\n\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked=\"\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"color\" title=\"Links Colors\" name=\"linksColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#494949\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n<nav class=\"headerbar\" mbr-class=\"{'sticky-nav':sticky}\">\n  <div class=\"brand\">\n      <span mbr-if=\"showLogo\" class=\"brand-logo\">\n          <amp-img src=\"../_images/logo1.png\" layout=\"responsive\" width=\"16\" height=\"9\" alt=\"a sample image\">\n              <img class=\"mbr-temp\" src=\"../_images/logo1.png\" alt=\"Mobirise\">\n          </amp-img>\n      </span>\n      <div mbr-text=\"\" mbr-theme-style=\"display-2\" class=\"brand-name mbr-fonts-style mbr-white\">Mobirise AMP</div>\n  </div>\n  <div role=\"button\" on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"hamburger\">\n    ☰\n  </div>\n</nav>\n\n<!--     <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\"\n         mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\"\n                type=\"button\"\n                data-toggle=\"collapse\"\n                data-target=\"#navbarSupportedContent\"\n                aria-controls=\"navbarSupportedContent\"\n                aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <amp-img src=\"../_images/logo1.png\"\n                             layout=\"responsive\"\n                             width=\"16\"\n                             height=\"9\"\n                             alt=\"a sample image\">\n                        <img class=\"mbr-temp\" src=\"../_images/logo1.png\" alt=\"Mobirise\">\n                    </amp-img>\n                </span>\n                <span mbr-if=\"showBrand\"\n                      mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\"\n                      data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\">\n                    <a class=\"navbar-caption\" data-app-selector=\".navbar-caption\"\n                       href=\"https://mobirise.com\">\n                        MOBIRISE\n                    </a>\n                </span>\n            </div>\n        </div>\n\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <div mbr-if=\"showItems\" mbr-buttons mbr-theme-style=\"display-7\"\n                 class=\"navbar-buttons mbr-section-btn\">\n                <a class=\"nav-link link mbr-fonts-style\"\n                   mbr-theme-style=\"display-4\"\n                   href=\"https://mobirise.com\"\n                   data-app-selector=\".nav-link,.dropdown-item\">\n                    Services\n                </a>\n                <a class=\"nav-link link mbr-fonts-style\"\n                   mbr-theme-style=\"display-4\"\n                   href=\"https://mobirise.com\"\n                   data-app-selector=\".nav-link,.dropdown-item\">\n                    About Us\n                </a>\n            </div>\n\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"\n                 class=\"navbar-buttons mbr-section-btn\">\n                <a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">\n                    Try It Now!\n                </a>\n            </div>\n        </div>\n    </nav> -->\n</header>\n",
-          "_cid": "qCgOU8QWnx",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"amp-sidebar\" global=\"\" once=\"menu\" always-top=\"\" position-absolute=\"\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked=\"\">\n\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked=\"\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"color\" title=\"Links Colors\" name=\"linksColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#494949\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <amp-sidebar id=\"sidebar1\" layout=\"nodisplay\" side=\"right\" class=\"mbr-white\">\n      <div role=\"button\" aria-label=\"close sidebar\" on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"close-sidebar\">\n           <span></span>\n      </div>\n      <ul class=\"sidebar\">\n        <li><a href=\"#\">Example 1</a></li>\n        <li><a href=\"#\">Example 2</a></li>\n        <li><a href=\"#\">Example 3</a></li>\n      </ul>\n    </amp-sidebar>\n    <nav class=\"headerbar\" mbr-class=\"{'sticky-nav':sticky}\">\n      <div class=\"brand\">\n          <span mbr-if=\"showLogo\" class=\"brand-logo\">\n              <amp-img src=\"../_images/logo1.png\" layout=\"responsive\" width=\"16\" height=\"9\" alt=\"a sample image\">\n                  <img class=\"mbr-temp\" src=\"../_images/logo1.png\" alt=\"Mobirise\">\n              </amp-img>\n          </span>\n          <div mbr-text=\"\" mbr-theme-style=\"display-2\" class=\"brand-name mbr-fonts-style mbr-white\">Google AMP theme</div>\n      </div>\n      \n      <div role=\"button\" on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"hamburger\">\n          <span></span>\n          <span></span>\n          <span></span>\n          <span></span>\n      </div>\n<!--       <div  class=\"hamburger\">\n        ☰\n      </div> -->\n\n\n    </nav>\n\n<!--     <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\"\n         mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\"\n                type=\"button\"\n                data-toggle=\"collapse\"\n                data-target=\"#navbarSupportedContent\"\n                aria-controls=\"navbarSupportedContent\"\n                aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <amp-img src=\"../_images/logo1.png\"\n                             layout=\"responsive\"\n                             width=\"16\"\n                             height=\"9\"\n                             alt=\"a sample image\">\n                        <img class=\"mbr-temp\" src=\"../_images/logo1.png\" alt=\"Mobirise\">\n                    </amp-img>\n                </span>\n                <span mbr-if=\"showBrand\"\n                      mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\"\n                      data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\">\n                    <a class=\"navbar-caption\" data-app-selector=\".navbar-caption\"\n                       href=\"https://mobirise.com\">\n                        MOBIRISE\n                    </a>\n                </span>\n            </div>\n        </div>\n\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <div mbr-if=\"showItems\" mbr-buttons mbr-theme-style=\"display-7\"\n                 class=\"navbar-buttons mbr-section-btn\">\n                <a class=\"nav-link link mbr-fonts-style\"\n                   mbr-theme-style=\"display-4\"\n                   href=\"https://mobirise.com\"\n                   data-app-selector=\".nav-link,.dropdown-item\">\n                    Services\n                </a>\n                <a class=\"nav-link link mbr-fonts-style\"\n                   mbr-theme-style=\"display-4\"\n                   href=\"https://mobirise.com\"\n                   data-app-selector=\".nav-link,.dropdown-item\">\n                    About Us\n                </a>\n            </div>\n\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"\n                 class=\"navbar-buttons mbr-section-btn\">\n                <a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">\n                    Try It Now!\n                </a>\n            </div>\n        </div>\n    </nav> -->\n</section>\n",
+          "_cid": "qChcvFE4GF",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
           "_params": {},
-          "_anchor": "menu1-3"
+          "_anchor": "menu1-2"
         },
         {
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            }
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
           },
-          "_name": "header1",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" selected=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#886586\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" class=\"mbr-overlay {{'overlay' + overlayOpacity}}\">\n    </div>\n\n    <div class=\"mbr-container\">\n        <h1 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Google AMP</h1>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">AMP PROVIDES A GREAT USER EXPERIENCE ACROSS MANY PLATFORMS</h3>\n        <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Full width intro with adjustable height, background image. Click any text to edit or style it.</p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n        </div>\n    </div>\n\n</section>",
-          "_cid": "qCgO6zwK0a",
-          "_anchor": "header1-0",
+          "_name": "youtube",
+          "_customHTML": "<section group=\"Images &amp; Videos\" plugins=\"amp-main,amp-youtube\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"text\" title=\"Video URL\" name=\"videoUrl\" value=\"http://www.youtube.com/watch?v=lBTCB7yLs8Y\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"image-block\">\n        <amp-youtube width=\"480\" height=\"270\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\">\n        </amp-youtube>\n    </div>\n</section>\n",
+          "_cid": "qChcOZW42h",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "youtube-3"
         }
       ]
     }
