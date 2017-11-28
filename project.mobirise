@@ -27,7 +27,7 @@
       }
     },
     "versionFirst": "4.5.0",
-    "uniqCompNum": 25,
+    "uniqCompNum": 32,
     "versionPublish": "4.5.0"
   },
   "pages": {
@@ -57,13 +57,7 @@
             },
             ".brand": {
               "display": "flex",
-              "align-items": "center",
-              ".brand-logo": {
-                "img": {
-                  "max-width": "5rem"
-                },
-                "padding-right": "1rem"
-              }
+              "align-items": "center"
             },
             ".brand-name": {
               "color": "#fff"
@@ -139,18 +133,19 @@
               "z-index": "1030"
             },
             "amp-img": {
-              "height": "80px",
-              "width": "80px"
+              "width": "3rem",
+              "height": "3rem",
+              "margin-right": "1rem"
             }
           },
           "_name": "menu1",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"amp-sidebar\" global=\"\" once=\"menu\" always-top=\"\" position-absolute=\"\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked=\"\">\n\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked=\"\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"color\" title=\"Links Colors\" name=\"linksColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#494949\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <amp-sidebar id=\"sidebar1\" layout=\"nodisplay\" side=\"right\" class=\"mbr-white\">\n      <div role=\"button\" aria-label=\"close sidebar\" on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"close-sidebar\">\n           <span></span>\n           <span></span>\n      </div>\n      <ul mbr-menu=\"\" class=\"sidebar\" mbr-theme-style=\"display-4\">\n        <li><a href=\"#\">Example 1</a></li>\n        <li><a href=\"#\">Example 2</a></li>\n        <li><a href=\"#\">Example 3</a></li>\n      </ul>\n\n\n\n\n\n\n\n    </amp-sidebar>\n\n    \n    <nav class=\"headerbar\" mbr-class=\"{'sticky-nav':sticky}\">\n      <div class=\"brand\">\n          <span mbr-if=\"showLogo\" class=\"brand-logo\">\n              <amp-img src=\"../_images/logo1.png\" layout=\"responsive\" width=\"16\" height=\"9\" alt=\"a sample image\">\n                  <img class=\"mbr-temp\" src=\"../_images/logo1.png\" alt=\"Mobirise\">\n              </amp-img>\n\n<!--               <amp-img src=\"../_images/logo1.png\"\n                       alt=\"Mobirise\"\n                       width=\"475\"\n                       height=\"268\"\n                       layout=\"responsive\"\n                       class=\"m1\">\n                      <noscript>\n                        <img src=\"../_images/logo1.png\" width=\"475\" height=\"268\" alt=\"Mobirise\"> \n                      </noscript>\n              </amp-img> -->\n          </span>\n          <div mbr-text=\"\" mbr-theme-style=\"display-2\" class=\"brand-name mbr-fonts-style mbr-white\">Google AMP theme</div>\n      </div>\n      \n      <div role=\"button\" on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"hamburger\">\n          <span></span>\n          <span></span>\n          <span></span>\n          <span></span>\n      </div>\n    </nav>w</section>\n",
-          "_cid": "qChpQihNiq",
+          "_customHTML": "<amp-sidebar id=\"sidebar1\" layout=\"nodisplay\" side=\"right\" class=\"mbr-white\">\n  <div role=\"button\" aria-label=\"close sidebar\" on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"close-sidebar\">\n       <span></span>\n       <span></span>\n  </div>\n  <ul mbr-menu=\"\" class=\"sidebar\" mbr-theme-style=\"display-4\">\n    <li><a href=\"#\">Example 1</a></li>\n    <li><a href=\"#\">Example 2</a></li>\n    <li><a href=\"#\">Example 3</a></li>\n  </ul>\n</amp-sidebar>\n<section class=\"menu\" group=\"Menu\" plugins=\"amp-sidebar\" global=\"\" once=\"menu\" always-top=\"\" position-absolute=\"\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked=\"\">\n\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked=\"\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"color\" title=\"Links Colors\" name=\"linksColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#494949\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n   \n    <nav class=\"headerbar\" mbr-class=\"{'sticky-nav':sticky}\">\n      <div class=\"brand\">\n          <span mbr-if=\"showLogo\" class=\"brand-logo\">\n              <amp-img src=\"../_images/logo1.png\" layout=\"responsive\" width=\"16\" height=\"9\" alt=\"a sample image\">\n                  <img class=\"mbr-temp\" src=\"../_images/logo1.png\" alt=\"Mobirise\">\n              </amp-img>\n          </span>\n          <div mbr-text=\"\" mbr-theme-style=\"display-2\" class=\"brand-name mbr-fonts-style mbr-white\">Google AMP theme</div>\n      </div>\n      \n      <div role=\"button\" on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"hamburger\">\n          <span></span>\n          <span></span>\n          <span></span>\n          <span></span>\n      </div>\n    </nav>w</section>\n",
+          "_cid": "qChrHOaxKv",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
           "_params": {},
-          "_anchor": "menu1-o"
+          "_anchor": "menu1-v"
         },
         {
           "_styles": {
